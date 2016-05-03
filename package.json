@@ -1,0 +1,32 @@
+{
+  "name": "redux-map-bind-actioncreator",
+  "version": "1.0.0",
+  "description": "Simple map and bind utility for action creators and connect redux",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsacramone/redux-map-bind-actioncreator.git"
+  },
+  "keywords": [
+    "redux",
+    "react",
+    "action",
+    "creator",
+    "actioncreator",
+    "bindactioncreators"
+  ],
+  "author": "Dean Sacramone <deansacramone@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dsacramone/redux-map-bind-actioncreator/issues"
+  },
+  "homepage": "https://github.com/dsacramone/redux-map-bind-actioncreator#readme",
+  "dependencies": {
+    "react": "15.0.2",
+    "react-redux": "4.4.5",
+    "redux": "3.5.2"
+  }
+}
