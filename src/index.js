@@ -1,9 +1,9 @@
-import {connect}              from 'react-redux'
-import { bindActionCreators } from 'redux'
+const connect            = require('react-redux').connect
+const bindActionCreators = require('redux').bindActionCreators
 
 
-export default (Component, name="actions") => Actions => connect(state => {
-                                                            return { state }
-                                                     }, dispatch => {
-                                                            return { [name]: bindActionCreators(Actions, dispatch) }
-                                                      })(Component)
+module.exports = (Component, name="actions") => Actions => connect(state => {
+                      return { state }
+                  }, dispatch => {
+                      return { [name]: bindActionCreators(Actions, dispatch) }
+                  })(Component)
