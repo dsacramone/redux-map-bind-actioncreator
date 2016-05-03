@@ -1,10 +1,11 @@
 # redux-smooth-bind-actioncreators
 <blockquote>
 This implentation of connect / bindActionCreator is a quality of life change for my particular usage.
-I have more than 1 "store" and each of my pages needs to bind its own actions while also 
+I have more than 1 "store" and each of my pages needs to bind its own actions/states while also
 binding dispatch. I don't want to include the functions at the bottom of "n" number of pages
 setting up these connects/bindToActionCreators. So, just include this package and 
-we should be good to go.
+we should be good to go. You now have "actions", and "state", all wrapped up nicely
+for you and no need to have 2 small functions and includes (at top) on each page.
 </blockquote>
 
 ## Simple Directions
@@ -21,15 +22,17 @@ So, lets make things simple.
 ## Example In Practice
  <pre><code>
 import * as Actions             from 'actions/myactions'
-import bindMapComponent         from 'redux-smooth-bind-actioncreators'
+import bindMapComponent         from 'redux-map-bind-actioncreators'
 
 class MyReactClass extends Component {
   // all your class logic here
 }
 export default bindMapComponent(MyReactClass)(Actions)
-So, in your react class, you can now do 'actions.myFuncName()'. 
-The dispatch is bound to it.
+
  </code></pre>
+So, in your react class, you can now do 'actions.myFuncName()'.
+The dispatch is bound to it.
+
 
 ## I want a custom "actions" name
 <blockquote>
