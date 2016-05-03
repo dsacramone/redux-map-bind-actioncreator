@@ -43,8 +43,10 @@ const {actions} = this.props
  </code></pre>
 
 But if you want to denote the 'actions' another way, just do this:
-
+ <pre><code>
 export default bindMapComponent(MyReactClass, "MYACTIONS")(Actions)
+ </code></pre>
+
 In Short:
 <ul>
  <li> default is "actions", you don't have to pass it.
