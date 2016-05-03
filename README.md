@@ -1,1 +1,3 @@
-# redux-map-bind-actioncreator
+# redux-smooth-bind-actioncreators
+
+
