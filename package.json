@@ -1,6 +1,6 @@
 {
   "name": "redux-map-bind-actioncreator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple map and bind utility for action creators and connect redux",
   "main": "src/index.js",
   "scripts": {
