@@ -1,11 +1,17 @@
 # redux-smooth-bind-actioncreators
 <blockquote>
+Reduce the boilerplate of "mapStateToProps" and "mapDispatchToProps" !
+
 This implentation of connect / bindActionCreator is a quality of life change for my particular usage.
 I have more than 1 "store" and each of my pages needs to bind its own actions/states while also
 binding dispatch. I don't want to include the functions at the bottom of "n" number of pages
 setting up these connects/bindToActionCreators. So, just include this package and 
 we should be good to go. You now have "actions", and "state", all wrapped up nicely
 for you and no need to have 2 small functions and includes (at top) on each page.
+
+So, in short - the goals is to reduce the boilerplate of "mapStateToProps" and "mapDispatchToProps". If you have
+these two functions for a file, or two. No worries. But, what if you have 3+ files, that all use this same boilerplate code?
+Thus, include this npm module -- and boom. One line at the bottom, and you are good to go!
 </blockquote>
 
 ## Simple Directions
