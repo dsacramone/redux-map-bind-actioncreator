@@ -12,6 +12,9 @@ setting up these connects/bindToActionCreators. So, just include this package an
 we should be good to go. You now have "actions", and "state", all wrapped up nicely
 for you and no need to have 2 small functions and includes (at top) on each page.
 
+Please NOTE: This code assumes you have multiple reducers AND you either want to include all of these stores, or just
+a particular one(or many).
+
  <pre><code>
 So, in short - the goals is to reduce the boilerplate of "mapStateToProps" and "mapDispatchToProps". If you have
 these two functions for a file, or two. No worries. But, what if you have 3+ files, that all use this same boilerplate code?
@@ -44,6 +47,21 @@ export default bindMapComponent(MyReactClass)(Actions)
 So, in your react class, you can now do 'actions.myFuncName()'.
 The dispatch is bound to it.
 
+
+## I want my whole state tree on my props. Do nothing, this handles it for you.
+## I want only 1 (or more) stores on my props. For instance, my "store/state tree" has
+the following reducers. Shoes, Prices, Colors, Sizes. BUT, I only want my component to
+care about the state as it pertains to Shoes & Colors (remember, Shoes is its own reducer )
+ <pre><code>
+
+export default bindMapComponent(MyReactClass)(Actions, "Shoes", "Colors")
+
+// you get:
+this.props.state = {
+    Shoes: {},
+    Colors: {}
+}
+ </code></pre>
 
 ## I want a custom "actions" name
 <blockquote>
